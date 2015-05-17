@@ -1,0 +1,45 @@
+.cloud{
+    @extend %cloud_texture;
+    left: 7%;
+    top: 28%;
+    width: 130px;
+    height: 80px;
+    border-radius: 119% 45% 93% 42%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+    background: #253AA4;
+}
+.cloud:before{
+    @extend %cloud_texture2;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -24%;
+    top: 16%;
+  width: 144px;
+  height: 55px;
+    border-radius: 173% 80% 104% 77%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+    background-color: #1F3AC5;
+//    background-image: linear-gradient(90deg,transparent 50%, rgba(249, 249, 249, 0.22) 50%);
+//    background-size: 5px 5px;
+}
+.cloud:after{
+    @extend %cloud_texture3;
+    content: " ";
+    display: block;
+    position: absolute;
+
+  right: -36%;
+  top: 24%;
+  width: 110px;
+  height: 50px;
+  border-radius: 112% 67% 106% 38%;
+
+
+//    background-color: white;
+//    box-shadow: 4px 10px 1px -4px rgba(0,0,0,0.2);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+    background-color: #2F52CD;
+//    background-image: linear-gradient(90deg,transparent 50%, rgba(249, 249, 249, 0.22) 50%);
+//    background-size: 5px 5px;
+}

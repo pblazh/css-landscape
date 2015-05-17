@@ -1,0 +1,1165 @@
+* {
+  box-sizing: border-box; }
+
+label,
+input {
+  color: white;
+  position: relative;
+  z-index: 1; }
+
+.landscape {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 600px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0; }
+
+.landscape div {
+  position: absolute; }
+
+.box {
+  left: 0;
+  right: 0;
+  width: 40%;
+  height: 60%;
+  height: 250px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  color: #0072FF;
+  text-align: center;
+  font-size: 24px;
+  padding: 25px 50px;
+  font-family: sans-serif;
+  background: white;
+  background: rgba(245, 245, 245, 0.5);
+  box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.2), 0px 5px 11px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 1px white; }
+  .box h1 {
+    color: #F08E8E;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #82ffa2, 5px 5px 0px #0072FF;
+    letter-spacing: 10px;
+    border-bottom-width: 7px;
+    border-bottom-style: double;
+    margin: 0; }
+  .box a {
+    color: #007BFF;
+    position: static !important;
+    display: inline !important; }
+  .box strong {
+    text-transform: uppercase; }
+
+#textures:checked ~ #images:not(:checked) ~ .landscape .conehead {
+  background: linear-gradient(108deg, transparent 85%, rgba(83, 190, 138, 0.8) 85%) 0px -25px, linear-gradient(250deg, transparent 85%, rgba(38, 170, 69, 0.8) 85%) 0px -25px, linear-gradient(115deg, transparent 80%, rgba(83, 190, 138, 0.8) 80%) 0px -12px, linear-gradient(245deg, transparent 80%, rgba(38, 170, 69, 0.8) 80%) 0px -12px, linear-gradient(120deg, transparent 75%, #4db074 75%) 0 0, linear-gradient(240deg, transparent 75%, #27911f 75%) 0 0, #178117;
+  background-size: 30px 50px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .daisies {
+  background: radial-gradient(circle at 50% 41%, #FFAE00 3%, #FFFFFF 4%, #FEFFC5 13%, rgba(210, 202, 171, 0) 15%, rgba(210, 202, 171, 0)) 31px 0, radial-gradient(circle at 50% 41%, #FFDF00 6%, #FFB5FB 6%, #FD90DF 20%, rgba(210, 202, 171, 0) 21%, rgba(210, 202, 171, 0)) 0 30px;
+  background-color: #58C06C;
+  background-size: 66px 60px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .stars {
+  background: linear-gradient(324deg, #253AA3 4%, transparent 4%) -35px 21px, linear-gradient(36deg, #253AA3 4%, transparent 4%) 14px 21px, linear-gradient(72deg, #298efa 8.5%, transparent 8.5%) 14px 21px, linear-gradient(288deg, #298efa 8.5%, transparent 8.5%) -35px 21px, linear-gradient(216deg, #298efa 7.5%, transparent 7.5%) -35px 11px, linear-gradient(144deg, #298efa 7.5%, transparent 7.5%) 14px 11px, linear-gradient(324deg, #253AA3 4%, transparent 4%) -10px 46px, linear-gradient(36deg, #253AA3 4%, transparent 4%) 39px 46px, linear-gradient(72deg, #007bff 8.5%, transparent 8.5%) 39px 46px, linear-gradient(288deg, #007bff 8.5%, transparent 8.5%) -10px 46px, linear-gradient(216deg, #007bff 7.5%, transparent 7.5%) -10px 36px, linear-gradient(144deg, #007bff 7.5%, transparent 7.5%) 39px 36px;
+  background-color: #2F49CD;
+  background-size: 50px 50px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .sea {
+  background-image: radial-gradient(circle at 100% 150%, #5ECCFC 24%, white 25%, white 28%, #5ECCFC 29%, #5ECCFC 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, #5ECCFC 24%, white 25%, white 28%, #5ECCFC 29%, #5ECCFC 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, #5ECCFC 11%, #5ECCFC 23%, white 24%, white 30%, #5ECCFC 31%, #5ECCFC 43%, white 44%, white 50%, #5ECCFC 51%, #5ECCFC 63%, white 64%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, #5ECCFC 6%, #5ECCFC 15%, white 16%, white 20%, #5ECCFC 21%, #5ECCFC 30%, white 31%, white 35%, #5ECCFC 36%, #5ECCFC 45%, white 46%, white 49%, transparent 50%, transparent), radial-gradient(circle at 0 50%, white 5%, #5ECCFC 6%, #5ECCFC 15%, white 16%, white 20%, #5ECCFC 21%, #5ECCFC 30%, white 31%, white 35%, #5ECCFC 36%, #5ECCFC 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+  background-color: #5ECCFC; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .horizont {
+  background: radial-gradient(circle at 100% 50%, transparent 17%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 52%, transparent 53%, transparent), radial-gradient(circle at 0% 50%, transparent 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, transparent 35%, transparent) 0 -10px;
+  background-color: darkgreen;
+  background-size: 15px 20px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .fish {
+  background: radial-gradient(circle at 0% 50%, transparent 20%, white 21%, white 34%, transparent 35%, transparent), radial-gradient(circle at 0% 50%, transparent 20%, white 21%, white 34%, transparent 35%, transparent) 8px 5px;
+  background-size: 16px 16px;
+  background-color: #FFE800; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .sun {
+  background: radial-gradient(circle at 82% 36%, transparent 58%, lightyellow 60%, yellow 75%); }
+#textures:checked ~ #images:not(:checked) ~ .landscape .sheep, #textures:checked ~ #images:not(:checked) ~ .landscape .sheep:before {
+  background: radial-gradient(circle at 50% 100%, transparent 20%, white 21%, white 34%, transparent 35%, transparent), radial-gradient(circle at 50% 0%, transparent 20%, white 21%, white 34%, transparent 35%, transparent) -3px 0 #ECECEC;
+  background-size: 9px 9px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .cloud {
+  background-image: linear-gradient(90deg, #253AA4 50%, #2F49CD 50%);
+  background-size: 6px 6px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .cloud:before {
+  background-image: linear-gradient(45deg, #2F49CD 50%, #283EAA 50%);
+  background-size: 5px 5px; }
+#textures:checked ~ #images:not(:checked) ~ .landscape .cloud:after {
+  background-image: linear-gradient(0deg, #2F49CD 50%, #2F52CD 50%);
+  background-size: 5px 5px; }
+
+#images:checked ~ .landscape .conehead {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAIAAADEPPy4AAABJElEQVRYw+3XywqCQBQG4ONRuuhGcOE6aC9tfJnwYXqYnifaB0HroAiEoIwWhsg46pnjjOOisxLFn4/f8ebEuxhok2y2x8MeyIOgMsFqbSpaaZDehqloRie2C2G0wVQTO7FaiLQNCnwC6xoAfD/C2VxbdMfa6O0E6eTfCWS4pa6rNiqyAO/uxOoKEcj0xnHgc6OjE2SQiXCv7UD5Gqzbg2XkFK+i+FR78vNpwouvJJcbrovEG9KGWkpWgo+u7iDT4T1qaW4znRrNeH9L4cgjU+Co5ZNDCkc2uReOw8lVugD3mo8kAEiT7J3fJJDrRZr+uD9JlzFNMlV4GC6s3o0Mcht8LDWbLIWjrtxmuvlCtJAFuGG1RnIdblDt0H//x/i5+0fz5guOji6eoo28TAAAAABJRU5ErkJggg==); }
+#images:checked ~ .landscape .daisies {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAA8CAIAAABdHvsOAAAET0lEQVRo3u2YT28VVRjGf885Z25beq8JJUBLN7b8iykBooZI48ayZGNoICbdmIg7d+BH0I3wCUR33ZhQ+AI0bqQJuKAxLGikZQNtiFKltdB755zXxdyWVtEEFDJN5s1kMve87yTnl/c8c55z9dH3n/G3GL91DucQQoYJmSWSjR29SCkjPAfAOzKHkySTBGYm85bS+E+fE1MJYdwmhunzBK8skAXVMrKgWli7e9UCwSv48enz5cVoMwRv3inzBE9HRvDUAlmgFsx7hWDBE/z49LkyYowuDOOdgid41TLCWh86atTChhGvLOCdvD+1cLx0GKceDst7cyJ4nMi8ea8sWFi/e7wneHOS9+bd6MP3y4VxauG4nDMnBY/3ygLBr+khe6aTzLeV4528w2l0YbhEGKMLwyZJQsLLnJN3BM+hDoYyhmocqhF8e1zCO5NwrjzrygFIcjKBcyA54T1DtU2FQzUFb5KcijeKF8uFYeszc7J/mp+QZKiokYRKJXEzrc87mQCz59QaZiaMZJIMw0qGYSlhkBKYJSMlbjc3Fd5uWkwys2RAu740HA643HtdqSAxoiklyyNxA8ntFjEpRotFTZIZKU3snioRxkTvlKWkZJZH1hismdPK7dYTpp9Ys0UrL7IU2ZhIdrn3esmsYTKLUV7kEYlWruDNkuQMk2EpERMFZ0qKyVIq3S4+dvQiMVkrkkdrtsijNXOaebsPq01aa89FTYyl8rnPrOHYkQvEZHlUTNbKyXOaOa2c1Zw80szVzkZiHDtSLq++yaiPHf6q3Y1WbGuj6MDG51Y+dvhC2Yy6P/TxsY2/J3qvy3jrcX+hB5lZTCo0HdPlXT98se+7Ep7+9NxD7Lp7b59gsYneKUoc4V9y5fmevpg2tm5UGBVGhVFhVBgVRoVRYbx4DNR7BurbX7k1fHWz/+Tgu4P1XWAgsNnlXy7duXFveXHLYJw9cGykb7/oNDLhDUQarHd++c7Oa/N3vpm5uQUW1Ujf3pG+/dBtbBMNoy7qRjdsg64TfQc/6BssO8ZAvefsgfdEN2wTDaiLBjTEG9AQ3dD16YHhl1PL68MY2bMXakaH6DC6oAF12jzbjA7ohHBiz75SYww2esAJD52ii/tXuRK44rl/FTpEJ3jh32xsL/uiAm84iuvGmXbixpliXDjDDdZ3lBpjbvkRRJEorv7T7UT/6WLcSCLNLv9a6g/u7NKjgfoeI4qW8UTHxrl/GqD/Q1gxmhCNeG9psdTdmHxwF5pi1VgRTVih/yT9J2HFeCqewFPIrz34ueyLanJ+xngKT43HsGT8Br8bS2LZCob5O3MvtZe/1l380szNgUbPQH23SEYuvGEiGU1YnV1eeOld/K9/fr7ypTV/d7G5/PaOndCEFrTgD1j9embq25kft5I1nJy/Ozl/d6C+faDRY3BvaXFu+dHWc7hrUlmc+w+Wtjo2VRgVRoVRYVQYFUaFUWH87/EnwCYfpO5c60sAAAAASUVORK5CYII=); }
+#images:checked ~ .landscape .stars {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAA5klEQVRYw2PU9zzLMPgAE1bRX666g9FZgzS0BqOzIDE4sPE4SEOLUbPvF/Gq2XZfplNoEW8T3dzEwMDAArcPT2Kip4PQ0xYuu+nvptFya7g5CznJ/1mzcmDrRxY0PtxBEAZLSPjARyJyIOESoVMpP5TaW6POGnXWqLNGnTXqrMHmrItGRqOhNaSdBYlBMuJxkIYWC31SN6aU/rlzdAot/DaRpJKFuoEPsQ9PsBHpdJqkLVx2Ex+co+XWqLMIFweq+5eQUT+y0M7HcAdBGLcdYwY+EpEDCZfIaPd11Fmjzhp11qizaA0Ar/xFGHfl2SAAAAAASUVORK5CYII=); }
+#images:checked ~ .landscape .sea {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAAyCAIAAADKlYLXAAAEL0lEQVRo3s1bzXXbMAwmVC+go3P0Cn1y13AWqAdwtmk8QCew55DqEeqjfasWqIUe+J6sSCQIApAa3vIiEcBH/HwAZUBEl1r7y4N+4OfXL4K3ZloyZYJvTRdw8KKlfiqwclViwiTEayr79aXYrcEErKoEcK4qn7vVLYJzdYvmkOXCpMWrFz8VnAXWtoSqhG0JySebFusWs7Cb6na6da8vhcZz4fuvv0oXlYFVlfC2kah+vHZ81MxtCeAlFnm6dec7cnzqsCmUGYqPGl9/zmGn8cqSnRR52BSc6OOsusXjtZtbYRVeSiXeNkUVB6tpEZ1rBl6zLQGdo/GNyTJHSo4XR6epNrGHfRZvyOCiywJflp7rqPDiQxZ8zMOUVfJiHpqUZcUKtXhxVAzmrPdr14iIVaxcBMmNOX+2wSu3EmVxggWqHn8VhnsxNdtfHkqwsmTZdlpQ/+nQOXBuWJvmO3y9Z4kLTm7UD2u0xwdi/ZA3aVrglZaIc5Ygl8l26+lLrBan+8e+2Of6xQJzCxMRPUAVg0hz++3e45Qdb9IeP6Xwzk/L0oPVczp+y5E9n8idE/CtCnKrWNOjBIs/Fxnj9eP3oz/PZPTKfC0580nOKqZVQjxHYvrUMIMP8QnzL78XfQJZ7Jw2j0Om6OeZYG1LoPNUb1HMrjRfpV2XMySgjWROLHpBGs+KebHPMJxZLpffEyfDz2hBU7OYugws4shze9gVf9hUtxgUXJWAH+luVoUScMhcuhAEizMXsekfgxHE9DLNgFhQEGNgCW4DtP12jFszO565bwli2UrZY6zEb9Ytums3Pb3DpnAkZHoX8zvQqH0LBe9R3ZCtNC/3oCQhsw3D6Z4j7A4h6mvSva6U78cgq0rw/5oDKdrjtqGEdTRq9cf90PmOp1tnlcs+yZJ51m4NADC6vY/2j7nAiSE73ToAoGUFVedHAJNRc7JHot9mXsFmJamsPWMr+N2GfnCYNAFMvmfiSDKBSQYcR3/mAXDnOUR4znQzag4coQa/KD356m4N9LcrQcgISbLSoVy0FYJPwEZWBPg9IXL4MiFmptCz8jXOKCl22NF+KCbSb7TAzagtoQ0qGXyAPuxE/5jFNv9LANo2qsnIMPv+6/O41awmsOYTtDx9tvJ0FBGnefN8R0RMEtpZq6dknhODTOxWfMJpeDwxK/h7qvASgCWGyQo4pSHyeMwFa75BhYkmZvGoB2uZkY5eJVa+R0TijkQJVrJn4EwpskKYrxvftOHd2LN/DN6XaH6OkHQrGV8zbOw51o0udz70202L74NRkRgs2iNMaG3Sc5mq0jZOb8LG84n+dif4YxLOuS3cKinFEb9/Ct4wjf8mLlA1YJ3vOFMDsL88xJ/geyeI/St4w1RMc5s4EglOO3dfub88gseZ+yXL8C2M1UeTRlrQ6y/WKprMh/36B9MGv/cyYhGBAAAAAElFTkSuQmCC); }
+#images:checked ~ .landscape .horizont {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAIAAADdpfBFAAAAhUlEQVQoz5WTsQ7AIAhET2JM6uLs//nvzi42cepgYxoLijfiAzlBgwSNYogALBvtyiVPQctykuwana4iPQqANBaHASsVrq2Wu/B9b7kuphMJZeja6sKAyqVIe+fPaocrbGY5lffOsy9jkPYbMqZD+nV96ZEqlRwJ9D+YEr5bTuyBJHP00x5Piz1RsKdAewAAAABJRU5ErkJggg==); }
+#images:checked ~ .landscape .fish {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAdUlEQVQoz5WS0Q3AIAhET8IO7r+dDtHQDw2lVqQQP4ze4wAt0hBHlbnphf9KAfQCgFJqALw47klzzmtKy+x4Wi9sGbugJ5liR4aQDPKam1ZjpR0MQ+7gnWFEDp9h8OFR/aZD9eulBRD9Gn6FQyMDaFEn9VLgBpfhL9wsN0qXAAAAAElFTkSuQmCC); }
+#images:checked ~ .landscape .sheep, #images:checked ~ .landscape .sheep:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAWklEQVQI13WOOw7AMAjFTNSFrLn/DcMKIx2oUlSpTFh8/GTvDQBzTnen1QWstQpUFTCzQsnMzrVXOID+qvfDzCJCVesiIs7zcYL0FIWPryuPVdz9E/31/Q2AG+UUL1dCEWsmAAAAAElFTkSuQmCC); }
+#images:checked ~ .landscape .cloud {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAABCAIAAAByq0inAAAAF0lEQVQI12NUtVrCwMDAwMDAxa8JYQAAEssBR+PNWoUAAAAASUVORK5CYII=); }
+#images:checked ~ .landscape .cloud:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAIAAAACDbGyAAAAJUlEQVQI12PUsFvFAAPs3MpM7NzKDEiACSKMwkcWYkLWzMDAAAB9GgIjqYKXogAAAABJRU5ErkJggg==); }
+#images:checked ~ .landscape .cloud:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAIAAAAL5hHIAAAAF0lEQVQI12PQ9zzLxMDAwMTAyQChGRgAFvoBV3+s230AAAAASUVORK5CYII=); }
+
+.stars {
+  top: 0;
+  width: 100%;
+  height: 70%;
+  background-color: #2F49CD; }
+
+.sea {
+  bottom: 0;
+  width: 130%;
+  height: 33%;
+  left: -15%;
+  border-radius: 100% 100% 0 0;
+  border-top: 10px solid rgba(0, 0, 0, 0.5);
+  background-color: #5ECCFC; }
+
+.horizont {
+  bottom: 0px;
+  width: 87%;
+  height: 60%;
+  border-radius: 100% 100% 0 0;
+  left: 5%;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: darkgreen; }
+
+.conehead {
+  bottom: -0px;
+  width: 76%;
+  height: 53%;
+  border-radius: 80% 102% 0 0 / 73% 117% 0 0;
+  left: -2%;
+  border-top: 5px solid rgba(0, 0, 0, 0.4);
+  background: #24811E; }
+
+.daisies {
+  bottom: 0;
+  width: 131%;
+  height: 50%;
+  border-radius: 253% 138% 0 0 / 241% 373% 0 0;
+  left: -15%;
+  background-color: #58C06C;
+  border-top: 10px solid rgba(0, 0, 0, 0.5); }
+
+.sun {
+  left: 250px;
+  top: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #2f49cd;
+  border-left: 20px solid #FFFF0C;
+  transform-origin: 50px -300px; }
+
+.wolf {
+  right: -10px;
+  top: 49%;
+  width: 80px;
+  height: 42px;
+  background-color: #333333;
+  border-radius: 0 73% 10% 96%;
+  background-image: radial-gradient(circle at 53% 13%, green 1px, green 2px, transparent 3px), radial-gradient(circle at 55% 17%, white 1px, white 3px, transparent 4px), radial-gradient(circle at 59% 41%, green 1px, green 2px, transparent 3px), radial-gradient(circle at 60% 44%, white 1px, white 3px, transparent 5px);
+  box-shadow: inset 0px 2px 0px #666666, inset -13px -8px 0px #333333, inset -4px -7px 0px red; }
+
+.wolf:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  background-color: #516E80;
+  border-radius: 100%;
+  left: -2px;
+  top: -6px;
+  -webkit-transform: skewX(15deg);
+  -webkit-transform-origin: right bottom;
+  transform: skewX(15deg);
+  transform-origin: right bottom;
+  box-shadow: inset -1px 1px 1px #B7CBDA, inset -1px -4px 1px #060606; }
+
+.wolf:after {
+  right: 10px;
+  top: -22px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 36px;
+  background-color: #333333;
+  border-radius: 0 100% 0 0 / 0 90%;
+  -webkit-transform: skewX(21deg);
+  -webkit-transform-origin: bottom;
+  transform: skewX(21deg);
+  transform-origin: bottom;
+  box-shadow: -10px 10px 0 0px #333333; }
+
+.mountains {
+  box-shadow: none;
+  bottom: 36%;
+  height: 0;
+  right: -7.5%; }
+
+.mountains b {
+  left: -754px;
+  box-shadow: none;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 154px 190px 260px;
+  border-color: transparent transparent #007bff transparent; }
+
+.mountains b:nth-child(4) {
+  left: -560px;
+  border-width: 0 200px 300px 200px;
+  border-color: transparent transparent #298EFA transparent; }
+
+.mountains b:nth-child(5) {
+  left: -431px;
+  border-width: 0px 73px 107px 71px;
+  border-color: transparent transparent white transparent;
+  bottom: 193px;
+  box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2); }
+
+.mountains b:nth-child(2) {
+  left: -406px;
+  border-width: 0 187px 234px 164px; }
+
+.mountains b:nth-child(1) {
+  left: -237px;
+  border-width: 0 145px 135px 100px;
+  border-color: transparent transparent #006EE5 transparent; }
+
+.shadow.mountains {
+  bottom: 34.5%;
+  right: -9.1%; }
+
+.shadow.mountains b {
+  border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent; }
+
+.cloud {
+  left: 7%;
+  top: 28%;
+  width: 130px;
+  height: 80px;
+  border-radius: 119% 45% 93% 42%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  background: #253AA4; }
+
+.cloud:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: -24%;
+  top: 16%;
+  width: 144px;
+  height: 55px;
+  border-radius: 173% 80% 104% 77%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  background-color: #1F3AC5; }
+
+.cloud:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: -36%;
+  top: 24%;
+  width: 110px;
+  height: 50px;
+  border-radius: 112% 67% 106% 38%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  background-color: #2F52CD; }
+
+.sheep.n2 {
+  left: 22%;
+  width: 100px;
+  height: 100px;
+  bottom: 70%; }
+
+.sheep.eats {
+  border-radius: 50% 50% 60% 40%/40% 40% 60% 60%;
+  -webkit-transform: scale(-0.8, 0.8);
+  transform: scale(-0.8, 0.8); }
+
+.sheep.eats b {
+  top: 45%;
+  left: 60%;
+  background-color: black;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.sheep {
+  background-size: 9px 9px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+  left: 30%;
+  bottom: 85%;
+  background-size: 10px 10px;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+  background: #FFF9ED; }
+
+.sheep:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 15%;
+  right: 99%;
+  top: 34%;
+  -webkit-transform: rotate(-22deg);
+  -webkit-transform-origin: top right;
+  transform: rotate(-22deg);
+  transform-origin: top right;
+  border-radius: 50% 0 70% 30%/50% 0 100% 50%;
+  background-size: 10px 10px;
+  background-color: #DDD; }
+
+.sheep b {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 60px;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  left: 58%;
+  top: -20%;
+  background: radial-gradient(circle at 43% 39%, blue 3%, transparent 4%), radial-gradient(circle at 86% 39%, blue 3%, transparent 3%), radial-gradient(circle at 40% 41%, white 8%, transparent 9%), radial-gradient(circle at 84% 41%, white 7%, transparent 8%);
+  background-color: black;
+  transform: rotate(-15deg); }
+
+.sheep b:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 25%;
+  background-color: black;
+  right: 98%;
+  top: 20%;
+  -webkit-transform: rotate(-10deg);
+  -webkit-transform-origin: top right;
+  transform: rotate(-10deg);
+  transform-origin: top right;
+  border-radius: 50% 0 70% 30%/50% 0 100% 50%; }
+
+.sheep b:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 25%;
+  border-radius: 0 50% 30% 70% / 0 50% 50% 100%;
+  background-color: black;
+  left: 97%;
+  top: 20%;
+  -webkit-transform: rotate(10deg);
+  -webkit-transform-origin: top left;
+  transform: rotate(10deg);
+  transform-origin: top left; }
+
+.landscape .fish {
+  bottom: 63%;
+  width: 100px;
+  left: 75%;
+  height: 50px;
+  border-radius: 30% 70% 70% 30%/50% 102% 10% 50%;
+  background-color: #FFE800;
+  border-top: 10px solid rgba(0, 0, 0, 0.3);
+  -webkit-transform-origin: 0 300px;
+  -webkit-transform: rotate(10deg);
+  transform-origin: 0 300px;
+  transform: rotate(10deg); }
+.landscape .fish:before {
+  position: absolute;
+  display: block;
+  content: "\00b7";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 40px 0px 0px;
+  border-color: transparent  #FFE800 transparent transparent;
+  right: 33px;
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
+  line-height: 48px;
+  padding-right: 21px;
+  letter-spacing: 89px;
+  color: #773800;
+  font-size: 80px;
+  top: -24px; }
+.landscape .fish:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 38px 13px 0;
+  border-color: transparent #FFC65E transparent transparent;
+  right: -34px;
+  bottom: -5px;
+  -webkit-transform-origin: 0px 10px;
+  transform-origin: 0px 10px;
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg); }
+.landscape .fish:nth-child(2) {
+  background-color: #FD7512;
+  -webkit-transform: rotate(6deg) scale(-0.7, 0.7);
+  transform: rotate(6deg) scale(-0.7, 0.7); }
+.landscape .fish:nth-child(2):before {
+  border-color: transparent #D30000 transparent transparent; }
+.landscape .fish:nth-child(2):after {
+  border-color: transparent #FF0000 transparent transparent; }
+
+#shadows:checked ~ .landscape .sea {
+  box-shadow: 1px -4px 1px rgba(0, 0, 0, 0.1), 0px -14px 2px rgba(0, 0, 0, 0.2);
+  border-top: none; }
+#shadows:checked ~ .landscape .horizont {
+  box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
+  border-top: none; }
+#shadows:checked ~ .landscape .conehead {
+  box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.2);
+  border-top: none; }
+#shadows:checked ~ .landscape .daisies {
+  box-shadow: 0px -10px 1px rgba(0, 0, 0, 0.2);
+  border-top: none; }
+#shadows:checked ~ .landscape .sun {
+  box-shadow: -11px 6px 1px rgba(0, 0, 0, 0.2); }
+#shadows:checked ~ .landscape .conehead {
+  box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.2);
+  border-top: none; }
+#shadows:checked ~ .landscape .wolf {
+  box-shadow: inset 0px 2px 0px #666666, inset -13px -8px 0px #333333, inset -4px -7px 0px red, 10px 12px 1px rgba(0, 0, 0, 0.3); }
+#shadows:checked ~ .landscape .wolf:before {
+  box-shadow: inset -1px 1px 1px #888888, inset -1px -4px 1px #111111; }
+#shadows:checked ~ .landscape .wolf:after {
+  box-shadow: -10px 10px 0 0px #333333; }
+#shadows:checked ~ .landscape .cloud {
+  box-shadow: -10px 10px 3px rgba(0, 0, 0, 0.2); }
+#shadows:checked ~ .landscape .cloud:before {
+  box-shadow: -18px 16px 5px -5px rgba(0, 0, 0, 0.2); }
+#shadows:checked ~ .landscape .cloud:after {
+  box-shadow: 4px 10px 1px -4px rgba(0, 0, 0, 0.2); }
+#shadows:checked ~ .landscape .fish {
+  box-shadow: inset 5px 11px 16px 2px #ffc65e, 0px 20px 3px rgba(0, 0, 0, 0.4);
+  border-top: none; }
+#shadows:checked ~ .landscape .fish:before {
+  top: -17px; }
+#shadows:checked ~ .landscape .fish:nth-child(2) {
+  box-shadow: inset 5px 11px 16px 2px #FF0000, 0px 20px 3px rgba(0, 0, 0, 0.4); }
+#shadows:checked ~ .landscape .sheep {
+  border-bottom: none;
+  box-shadow: -9px 4px 3px rgba(0, 0, 0, 0.3); }
+#shadows:checked ~ .landscape .sheep:before {
+  box-shadow: -9px 4px 3px rgba(0, 0, 0, 0.3); }
+#shadows:checked ~ .landscape .sheep b {
+  box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4); }
+#shadows:checked ~ .landscape .sheep b:before {
+  box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4); }
+#shadows:checked ~ .landscape .cloud {
+  box-shadow: -10px 10px 3px rgba(0, 0, 0, 0.2);
+  border-bottom: none; }
+#shadows:checked ~ .landscape .cloud:before {
+  box-shadow: -18px 16px 5px -5px rgba(0, 0, 0, 0.2);
+  border-bottom: none; }
+#shadows:checked ~ .landscape .cloud:after {
+  box-shadow: 4px 10px 1px -4px rgba(0, 0, 0, 0.2);
+  border-bottom: none; }
+
+@keyframes jump {
+  0% {
+    margin-bottom: 0;
+    width: 100px;
+    height: 100px;
+    padding: 20px; }
+  5.5% {
+    margin-bottom: 0;
+    width: 110px;
+    height: 90px;
+    padding: 30px; }
+  7% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; }
+  22.5% {
+    margin-bottom: 145px;
+    height: 100px;
+    padding: 5px; }
+  25% {
+    margin-bottom: 150px;
+    height: 102px;
+    width: 98px;
+    padding: 0px; }
+  27.55% {
+    margin-bottom: 145px;
+    height: 100px;
+    padding: 10px; }
+  35% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; }
+  40% {
+    margin-bottom: 0;
+    height: 90px;
+    width: 110px;
+    padding: 30px; }
+  45% {
+    margin-bottom: 0;
+    height: 90px;
+    width: 110px;
+    padding: 30px; }
+  48% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; }
+  60% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; } }
+@keyframes fish {
+  0% {
+    transform: rotate(90deg); }
+  10% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(-110deg); }
+  100% {
+    transform: rotate(-110deg); } }
+@keyframes fish2 {
+  0% {
+    transform: scale(-0.7, 0.7) rotate(90deg); }
+  10% {
+    transform: scale(-0.7, 0.7) rotate(0deg); }
+  20% {
+    transform: scale(-0.7, 0.7) rotate(-100deg); }
+  100% {
+    transform: scale(-0.7, 0.7) rotate(-100deg); } }
+@keyframes fish-tail {
+  0% {
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg); }
+  100% {
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg); } }
+@keyframes sun {
+  0% {
+    transform: rotate(6deg); }
+  100% {
+    transform: rotate(-6deg); } }
+@keyframes sea {
+  0% {
+    background-position-y: 0px; }
+  50% {
+    background-position-y: -150px; }
+  100% {
+    background-position-y: -150px; } }
+@keyframes shake {
+  0% {
+    transform: rotate(10deg); }
+  25% {
+    transform: rotate(10deg); }
+  75% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(10deg); } }
+@keyframes tail {
+  0% {
+    transform: rotate(-22deg); }
+  2% {
+    transform: rotate(-32deg); }
+  6% {
+    transform: rotate(12deg); }
+  10% {
+    transform: rotate(-32deg); }
+  14% {
+    transform: rotate(12deg); }
+  18% {
+    transform: rotate(-32deg); }
+  20% {
+    transform: rotate(-22deg); } }
+@keyframes wolf {
+  0% {
+    right: -100px;
+    top: 50%;
+    transform: scale(0.8); }
+  2% {
+    right: -5px; }
+  3% {
+    right: -8px; }
+  15% {
+    right: -8px; }
+  17% {
+    right: -100px; }
+  50% {
+    right: -100px;
+    top: 50%;
+    transform: scale(0.8); }
+  50.01% {
+    top: 61%;
+    transform: scale(1); }
+  52% {
+    right: 0px; }
+  53% {
+    right: -3px; }
+  65% {
+    right: -3px; }
+  67% {
+    right: -100px; }
+  100% {
+    right: -100px;
+    top: 61%;
+    transform: scale(1); } }
+@-webkit-keyframes jump {
+  0% {
+    margin-bottom: 0;
+    width: 100px;
+    height: 100px;
+    padding: 20px; }
+  5.5% {
+    margin-bottom: 0;
+    width: 110px;
+    height: 90px;
+    padding: 30px; }
+  7% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; }
+  22.5% {
+    margin-bottom: 145px;
+    height: 100px;
+    padding: 5px; }
+  25% {
+    margin-bottom: 150px;
+    height: 102px;
+    width: 98px;
+    padding: 0px; }
+  27.55% {
+    margin-bottom: 145px;
+    height: 100px;
+    padding: 10px; }
+  35% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; }
+  40% {
+    margin-bottom: 0;
+    height: 90px;
+    width: 110px;
+    padding: 30px; }
+  45% {
+    margin-bottom: 0;
+    height: 90px;
+    width: 110px;
+    padding: 30px; }
+  48% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; }
+  60% {
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    padding: 20px; } }
+@-webkit-keyframes fish {
+  0% {
+    -webkit-transform: rotate(90deg);
+    display: block; }
+  20% {
+    -webkit-transform: rotate(0deg); }
+  40% {
+    -webkit-transform: rotate(-110deg);
+    display: none; }
+  100% {
+    -webkit-transform: rotate(-110deg);
+    display: none; } }
+@-webkit-keyframes fish2 {
+  0% {
+    -webkit-transform: scale(-0.7, 0.7) rotate(90deg);
+    display: block; }
+  20% {
+    -webkit-transform: scale(-0.7, 0.7) rotate(0deg); }
+  40% {
+    -webkit-transform: scale(-0.7, 0.7) rotate(-100deg);
+    display: none; }
+  100% {
+    -webkit-transform: scale(-0.7, 0.7) rotate(-100deg);
+    display: none; } }
+@-webkit-keyframes fish-tail {
+  0% {
+    -webkit-transform: rotate(60deg); }
+  100% {
+    -webkit-transform: rotate(10deg); } }
+@-webkit-keyframes sun {
+  0% {
+    -webkit-transform: rotate(6deg); }
+  100% {
+    -webkit-transform: rotate(-6deg); } }
+@-webkit-keyframes sea {
+  0% {
+    background-position-y: 0px; }
+  50% {
+    background-position-y: -150px; }
+  100% {
+    background-position-y: -150px; } }
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(10deg); }
+  25% {
+    -webkit-transform: rotate(10deg); }
+  75% {
+    -webkit-transform: rotate(-10deg); }
+  100% {
+    -webkit-transform: rotate(10deg); } }
+@-webkit-keyframes tail {
+  0% {
+    -webkit-transform: rotate(-22deg); }
+  2% {
+    -webkit-transform: rotate(-32deg); }
+  6% {
+    -webkit-transform: rotate(12deg); }
+  10% {
+    -webkit-transform: rotate(-32deg); }
+  14% {
+    -webkit-transform: rotate(12deg); }
+  18% {
+    -webkit-transform: rotate(-32deg); }
+  20% {
+    -webkit-transform: rotate(-22deg); } }
+@-webkit-keyframes wolf {
+  0% {
+    right: -100px;
+    top: 50%;
+    -webkit-transform: scale(0.8); }
+  2% {
+    right: -5px; }
+  3% {
+    right: -8px; }
+  15% {
+    right: -8px; }
+  17% {
+    right: -100px; }
+  50% {
+    right: -100px;
+    top: 50%;
+    -webkit-transform: scale(0.8); }
+  50.01% {
+    top: 61%;
+    -webkit-transform: scale(1); }
+  52% {
+    right: 0px; }
+  53% {
+    right: -3px; }
+  65% {
+    right: -3px; }
+  67% {
+    right: -100px; }
+  100% {
+    right: -100px;
+    top: 61%;
+    -webkit-transform: scale(1); } }
+#animation:checked ~ .landscape .sheep:last-child {
+  -webkit-animation: jump 2s infinite;
+  animation: jump 2s infinite; }
+#animation:checked ~ .landscape .sheep:first-child b {
+  -webkit-animation: shake 3s infinite;
+  animation: shake 3s infinite; }
+#animation:checked ~ .landscape .sheep:before {
+  -webkit-animation: tail 3s infinite;
+  animation: tail 3s infinite; }
+#animation:checked ~ .landscape .sheep:first-child:before {
+  -webkit-animation: tail 3s 1s infinite;
+  animation: tail 3s 1s infinite; }
+#animation:checked ~ .landscape .sheep:first-child b:before {
+  -webkit-animation: tail 6s 1s infinite;
+  animation: tail 6s 1s infinite; }
+#animation:checked ~ .landscape .sea {
+  -webkit-animation: sea 10s infinite;
+  animation: sea 3s infinite; }
+#animation:checked ~ .landscape .fish:first-child {
+  -webkit-animation: fish 12s linear infinite;
+  animation: fish 12s linear infinite; }
+#animation:checked ~ .landscape .fish:nth-child(2) {
+  transform: rotate(180deg) scale(-0.7, 0.7);
+  -webkit-animation: fish2 8s  linear  infinite;
+  animation: fish2 8s 3s linear  infinite; }
+#animation:checked ~ .landscape .fish:after {
+  -webkit-animation: fish-tail .2s linear alternate infinite;
+  animation: fish-tail .2s linear alternate infinite; }
+#animation:checked ~ .landscape .wolf {
+  right: -100px;
+  -webkit-animation: wolf 13s infinite;
+  animation: wolf 13s infinite; }
+#animation:checked ~ .landscape .wolf:before {
+  -webkit-animation: tail 2s infinite;
+  animation: tail 2s infinite; }
+#animation:checked ~ .landscape .sun {
+  -webkit-animation: sun 3s ease-in-out alternate infinite;
+  animation: sun 3s ease-in-out alternate infinite; }
+
+.landscape a {
+  position: absolute;
+  background-color: transparent;
+  cursor: default;
+  left: -1000;
+  top: 0;
+  height: 100%;
+  z-index: 1; }
+
+input, label {
+  display: none; }
+
+input:checked, input:not(:checked),
+label:checked, label:not(:checked) {
+  display: inline-block; }
+
+#paralax:not(:checked) ~ .landscape a {
+  display: none; }
+
+.landscape a {
+  width: 5%; }
+.landscape a.n0 {
+  left: 0%; }
+.landscape a.n0:hover ~ .sea {
+  margin-left: 12%; }
+.landscape a.n0:hover ~ .cloud {
+  margin-left: 5.6%; }
+.landscape a.n0:hover ~ .daisies {
+  margin-left: 2%; }
+.landscape a.n0:hover ~ .sun,
+.landscape a.n0:hover ~ .conehead {
+  margin-left: 1%; }
+.landscape a.n0:hover ~ .horizont {
+  margin-left: 0.4%; }
+.landscape a.n0:hover ~ .mountains {
+  margin-right: -2%; }
+.landscape a.n1 {
+  left: 5%; }
+.landscape a.n1:hover ~ .sea {
+  margin-left: 10.8%; }
+.landscape a.n1:hover ~ .cloud {
+  margin-left: 5.04%; }
+.landscape a.n1:hover ~ .daisies {
+  margin-left: 1.8%; }
+.landscape a.n1:hover ~ .sun,
+.landscape a.n1:hover ~ .conehead {
+  margin-left: 0.9%; }
+.landscape a.n1:hover ~ .horizont {
+  margin-left: 0.36%; }
+.landscape a.n1:hover ~ .mountains {
+  margin-right: -1.8%; }
+.landscape a.n2 {
+  left: 10%; }
+.landscape a.n2:hover ~ .sea {
+  margin-left: 9.6%; }
+.landscape a.n2:hover ~ .cloud {
+  margin-left: 4.48%; }
+.landscape a.n2:hover ~ .daisies {
+  margin-left: 1.6%; }
+.landscape a.n2:hover ~ .sun,
+.landscape a.n2:hover ~ .conehead {
+  margin-left: 0.8%; }
+.landscape a.n2:hover ~ .horizont {
+  margin-left: 0.32%; }
+.landscape a.n2:hover ~ .mountains {
+  margin-right: -1.6%; }
+.landscape a.n3 {
+  left: 15%; }
+.landscape a.n3:hover ~ .sea {
+  margin-left: 8.4%; }
+.landscape a.n3:hover ~ .cloud {
+  margin-left: 3.92%; }
+.landscape a.n3:hover ~ .daisies {
+  margin-left: 1.4%; }
+.landscape a.n3:hover ~ .sun,
+.landscape a.n3:hover ~ .conehead {
+  margin-left: 0.7%; }
+.landscape a.n3:hover ~ .horizont {
+  margin-left: 0.28%; }
+.landscape a.n3:hover ~ .mountains {
+  margin-right: -1.4%; }
+.landscape a.n4 {
+  left: 20%; }
+.landscape a.n4:hover ~ .sea {
+  margin-left: 7.2%; }
+.landscape a.n4:hover ~ .cloud {
+  margin-left: 3.36%; }
+.landscape a.n4:hover ~ .daisies {
+  margin-left: 1.2%; }
+.landscape a.n4:hover ~ .sun,
+.landscape a.n4:hover ~ .conehead {
+  margin-left: 0.6%; }
+.landscape a.n4:hover ~ .horizont {
+  margin-left: 0.24%; }
+.landscape a.n4:hover ~ .mountains {
+  margin-right: -1.2%; }
+.landscape a.n5 {
+  left: 25%; }
+.landscape a.n5:hover ~ .sea {
+  margin-left: 6%; }
+.landscape a.n5:hover ~ .cloud {
+  margin-left: 2.8%; }
+.landscape a.n5:hover ~ .daisies {
+  margin-left: 1%; }
+.landscape a.n5:hover ~ .sun,
+.landscape a.n5:hover ~ .conehead {
+  margin-left: 0.5%; }
+.landscape a.n5:hover ~ .horizont {
+  margin-left: 0.2%; }
+.landscape a.n5:hover ~ .mountains {
+  margin-right: -1%; }
+.landscape a.n6 {
+  left: 30%; }
+.landscape a.n6:hover ~ .sea {
+  margin-left: 4.8%; }
+.landscape a.n6:hover ~ .cloud {
+  margin-left: 2.24%; }
+.landscape a.n6:hover ~ .daisies {
+  margin-left: 0.8%; }
+.landscape a.n6:hover ~ .sun,
+.landscape a.n6:hover ~ .conehead {
+  margin-left: 0.4%; }
+.landscape a.n6:hover ~ .horizont {
+  margin-left: 0.16%; }
+.landscape a.n6:hover ~ .mountains {
+  margin-right: -0.8%; }
+.landscape a.n7 {
+  left: 35%; }
+.landscape a.n7:hover ~ .sea {
+  margin-left: 3.6%; }
+.landscape a.n7:hover ~ .cloud {
+  margin-left: 1.68%; }
+.landscape a.n7:hover ~ .daisies {
+  margin-left: 0.6%; }
+.landscape a.n7:hover ~ .sun,
+.landscape a.n7:hover ~ .conehead {
+  margin-left: 0.3%; }
+.landscape a.n7:hover ~ .horizont {
+  margin-left: 0.12%; }
+.landscape a.n7:hover ~ .mountains {
+  margin-right: -0.6%; }
+.landscape a.n8 {
+  left: 40%; }
+.landscape a.n8:hover ~ .sea {
+  margin-left: 2.4%; }
+.landscape a.n8:hover ~ .cloud {
+  margin-left: 1.12%; }
+.landscape a.n8:hover ~ .daisies {
+  margin-left: 0.4%; }
+.landscape a.n8:hover ~ .sun,
+.landscape a.n8:hover ~ .conehead {
+  margin-left: 0.2%; }
+.landscape a.n8:hover ~ .horizont {
+  margin-left: 0.08%; }
+.landscape a.n8:hover ~ .mountains {
+  margin-right: -0.4%; }
+.landscape a.n9 {
+  left: 45%; }
+.landscape a.n9:hover ~ .sea {
+  margin-left: 1.2%; }
+.landscape a.n9:hover ~ .cloud {
+  margin-left: 0.56%; }
+.landscape a.n9:hover ~ .daisies {
+  margin-left: 0.2%; }
+.landscape a.n9:hover ~ .sun,
+.landscape a.n9:hover ~ .conehead {
+  margin-left: 0.1%; }
+.landscape a.n9:hover ~ .horizont {
+  margin-left: 0.04%; }
+.landscape a.n9:hover ~ .mountains {
+  margin-right: -0.2%; }
+.landscape a.n10 {
+  left: 50%; }
+.landscape a.n10:hover ~ .sea {
+  margin-left: 0%; }
+.landscape a.n10:hover ~ .cloud {
+  margin-left: 0%; }
+.landscape a.n10:hover ~ .daisies {
+  margin-left: 0%; }
+.landscape a.n10:hover ~ .sun,
+.landscape a.n10:hover ~ .conehead {
+  margin-left: 0%; }
+.landscape a.n10:hover ~ .horizont {
+  margin-left: 0%; }
+.landscape a.n10:hover ~ .mountains {
+  margin-right: 0%; }
+.landscape a.n11 {
+  left: 55%; }
+.landscape a.n11:hover ~ .sea {
+  margin-left: -1.2%; }
+.landscape a.n11:hover ~ .cloud {
+  margin-left: -0.56%; }
+.landscape a.n11:hover ~ .daisies {
+  margin-left: -0.2%; }
+.landscape a.n11:hover ~ .sun,
+.landscape a.n11:hover ~ .conehead {
+  margin-left: -0.1%; }
+.landscape a.n11:hover ~ .horizont {
+  margin-left: -0.04%; }
+.landscape a.n11:hover ~ .mountains {
+  margin-right: 0.2%; }
+.landscape a.n12 {
+  left: 60%; }
+.landscape a.n12:hover ~ .sea {
+  margin-left: -2.4%; }
+.landscape a.n12:hover ~ .cloud {
+  margin-left: -1.12%; }
+.landscape a.n12:hover ~ .daisies {
+  margin-left: -0.4%; }
+.landscape a.n12:hover ~ .sun,
+.landscape a.n12:hover ~ .conehead {
+  margin-left: -0.2%; }
+.landscape a.n12:hover ~ .horizont {
+  margin-left: -0.08%; }
+.landscape a.n12:hover ~ .mountains {
+  margin-right: 0.4%; }
+.landscape a.n13 {
+  left: 65%; }
+.landscape a.n13:hover ~ .sea {
+  margin-left: -3.6%; }
+.landscape a.n13:hover ~ .cloud {
+  margin-left: -1.68%; }
+.landscape a.n13:hover ~ .daisies {
+  margin-left: -0.6%; }
+.landscape a.n13:hover ~ .sun,
+.landscape a.n13:hover ~ .conehead {
+  margin-left: -0.3%; }
+.landscape a.n13:hover ~ .horizont {
+  margin-left: -0.12%; }
+.landscape a.n13:hover ~ .mountains {
+  margin-right: 0.6%; }
+.landscape a.n14 {
+  left: 70%; }
+.landscape a.n14:hover ~ .sea {
+  margin-left: -4.8%; }
+.landscape a.n14:hover ~ .cloud {
+  margin-left: -2.24%; }
+.landscape a.n14:hover ~ .daisies {
+  margin-left: -0.8%; }
+.landscape a.n14:hover ~ .sun,
+.landscape a.n14:hover ~ .conehead {
+  margin-left: -0.4%; }
+.landscape a.n14:hover ~ .horizont {
+  margin-left: -0.16%; }
+.landscape a.n14:hover ~ .mountains {
+  margin-right: 0.8%; }
+.landscape a.n15 {
+  left: 75%; }
+.landscape a.n15:hover ~ .sea {
+  margin-left: -6%; }
+.landscape a.n15:hover ~ .cloud {
+  margin-left: -2.8%; }
+.landscape a.n15:hover ~ .daisies {
+  margin-left: -1%; }
+.landscape a.n15:hover ~ .sun,
+.landscape a.n15:hover ~ .conehead {
+  margin-left: -0.5%; }
+.landscape a.n15:hover ~ .horizont {
+  margin-left: -0.2%; }
+.landscape a.n15:hover ~ .mountains {
+  margin-right: 1%; }
+.landscape a.n16 {
+  left: 80%; }
+.landscape a.n16:hover ~ .sea {
+  margin-left: -7.2%; }
+.landscape a.n16:hover ~ .cloud {
+  margin-left: -3.36%; }
+.landscape a.n16:hover ~ .daisies {
+  margin-left: -1.2%; }
+.landscape a.n16:hover ~ .sun,
+.landscape a.n16:hover ~ .conehead {
+  margin-left: -0.6%; }
+.landscape a.n16:hover ~ .horizont {
+  margin-left: -0.24%; }
+.landscape a.n16:hover ~ .mountains {
+  margin-right: 1.2%; }
+.landscape a.n17 {
+  left: 85%; }
+.landscape a.n17:hover ~ .sea {
+  margin-left: -8.4%; }
+.landscape a.n17:hover ~ .cloud {
+  margin-left: -3.92%; }
+.landscape a.n17:hover ~ .daisies {
+  margin-left: -1.4%; }
+.landscape a.n17:hover ~ .sun,
+.landscape a.n17:hover ~ .conehead {
+  margin-left: -0.7%; }
+.landscape a.n17:hover ~ .horizont {
+  margin-left: -0.28%; }
+.landscape a.n17:hover ~ .mountains {
+  margin-right: 1.4%; }
+.landscape a.n18 {
+  left: 90%; }
+.landscape a.n18:hover ~ .sea {
+  margin-left: -9.6%; }
+.landscape a.n18:hover ~ .cloud {
+  margin-left: -4.48%; }
+.landscape a.n18:hover ~ .daisies {
+  margin-left: -1.6%; }
+.landscape a.n18:hover ~ .sun,
+.landscape a.n18:hover ~ .conehead {
+  margin-left: -0.8%; }
+.landscape a.n18:hover ~ .horizont {
+  margin-left: -0.32%; }
+.landscape a.n18:hover ~ .mountains {
+  margin-right: 1.6%; }
+.landscape a.n19 {
+  left: 95%; }
+.landscape a.n19:hover ~ .sea {
+  margin-left: -10.8%; }
+.landscape a.n19:hover ~ .cloud {
+  margin-left: -5.04%; }
+.landscape a.n19:hover ~ .daisies {
+  margin-left: -1.8%; }
+.landscape a.n19:hover ~ .sun,
+.landscape a.n19:hover ~ .conehead {
+  margin-left: -0.9%; }
+.landscape a.n19:hover ~ .horizont {
+  margin-left: -0.36%; }
+.landscape a.n19:hover ~ .mountains {
+  margin-right: 1.8%; }
+.landscape a.n20 {
+  left: 100%; }
+.landscape a.n20:hover ~ .sea {
+  margin-left: -12%; }
+.landscape a.n20:hover ~ .cloud {
+  margin-left: -5.6%; }
+.landscape a.n20:hover ~ .daisies {
+  margin-left: -2%; }
+.landscape a.n20:hover ~ .sun,
+.landscape a.n20:hover ~ .conehead {
+  margin-left: -1%; }
+.landscape a.n20:hover ~ .horizont {
+  margin-left: -0.4%; }
+.landscape a.n20:hover ~ .mountains {
+  margin-right: 2%; }
+
+#debug:checked ~ .landscape div {
+  outline: dashed 1px red !important; }
+#debug:checked ~ .landscape a {
+  border-right: dashed 1px lightgreen !important; }
+
+/*# sourceMappingURL=main.css.map */

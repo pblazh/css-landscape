@@ -1,0 +1,86 @@
+#textures:checked~#images:not(:checked)~.landscape{
+    .conehead{
+        background: 
+            linear-gradient(108deg, transparent 85%, rgba(83, 190, 138, 0.8) 85%) 0px -25px, 
+            linear-gradient(250deg, transparent 85%, rgba(38, 170, 69, 0.8) 85%) 0px -25px, 
+            linear-gradient(115deg, transparent 80%, rgba(83, 190, 138, 0.8) 80%) 0px -12px, 
+            linear-gradient(245deg, transparent 80%, rgba(38, 170, 69, 0.8) 80%) 0px -12px, 
+            linear-gradient(120deg, transparent 75%, rgba(77, 176, 116, 1) 75%) 0 0, 
+            linear-gradient(240deg, transparent 75%, rgba(39, 145, 31, 1) 75%) 0 0, 
+            #178117;
+        background-size: 30px 50px;
+    }
+
+    .daisies{
+        background: 
+            radial-gradient(circle at 50% 41%, #FFAE00 3%, #FFFFFF 4%, #FEFFC5 13%, rgba(210,202,171,0) 15%, rgba(210,202,171,0)) 31px 0, 
+            radial-gradient(circle at 50% 41%, #FFDF00 6%, #FFB5FB 6%, #FD90DF 20%, rgba(210,202,171,0) 21%, rgba(210,202,171,0)) 0 30px;
+        background-color: #58C06C;
+        background-size: 66px 60px;
+    }
+    .stars{
+        background: 
+            linear-gradient(324deg, #253AA3 4%, transparent 4%) -35px 21px, 
+            linear-gradient( 36deg, #253AA3 4%, transparent 4%) 14px 21px, 
+            linear-gradient( 72deg, rgb(41, 142, 250) 8.5%, transparent 8.5%) 14px 21px, 
+            linear-gradient(288deg, rgb(41, 142, 250) 8.5%, transparent 8.5%) -35px 21px, 
+            linear-gradient(216deg, rgb(41, 142, 250) 7.5%, transparent 7.5%) -35px 11px, 
+            linear-gradient(144deg, rgb(41, 142, 250) 7.5%, transparent 7.5%) 14px 11px, 
+            linear-gradient(324deg, #253AA3 4%, transparent 4%) -10px 46px, 
+            linear-gradient( 36deg, #253AA3 4%, transparent 4%) 39px 46px, 
+            linear-gradient( 72deg, rgb(0, 123, 255) 8.5%, transparent 8.5%) 39px 46px, 
+            linear-gradient(288deg, rgb(0, 123, 255) 8.5%, transparent 8.5%) -10px 46px, 
+            linear-gradient(216deg, rgb(0, 123, 255) 7.5%, transparent 7.5%) -10px 36px, 
+            linear-gradient(144deg, rgb(0, 123, 255) 7.5%, transparent 7.5%) 39px 36px;
+        background-color: #2F49CD;
+        background-size: 50px 50px;
+    }
+    .sea{
+        background-image:
+            radial-gradient(circle at 100% 150%, #5ECCFC 24%, white 25%, white 28%, #5ECCFC 29%, #5ECCFC 36%, white 36%, white 40%, transparent 40%, transparent),
+            radial-gradient(circle at 0    150%, #5ECCFC 24%, white 25%, white 28%, #5ECCFC 29%, #5ECCFC 36%, white 36%, white 40%, transparent 40%, transparent),
+            radial-gradient(circle at 50%  100%, white 10%, #5ECCFC 11%, #5ECCFC 23%, white 24%, white 30%, #5ECCFC 31%, #5ECCFC 43%, white 44%, white 50%, #5ECCFC 51%, #5ECCFC 63%, white 64%, white 71%, transparent 71%, transparent),
+            radial-gradient(circle at 100% 50%, white 5%, #5ECCFC 6%, #5ECCFC 15%, white 16%, white 20%, #5ECCFC 21%, #5ECCFC 30%, white 31%, white 35%, #5ECCFC 36%, #5ECCFC 45%, white 46%, white 49%, transparent 50%, transparent),
+            radial-gradient(circle at 0    50%, white 5%, #5ECCFC 6%, #5ECCFC 15%, white 16%, white 20%, #5ECCFC 21%, #5ECCFC 30%, white 31%, white 35%, #5ECCFC 36%, #5ECCFC 45%, white 46%, white 49%, transparent 50%, transparent);
+        background-size:100px 50px;
+        background-color:#5ECCFC;
+    }
+
+    .horizont{
+        background: 
+            radial-gradient( circle at 100% 50%, transparent 17%, rgba(255,255,255,.1) 21%, rgba(255,255,255,.1) 52%, transparent 53%, transparent), 
+            radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.1) 21%, rgba(255,255,255,.1) 34%, transparent 35%, transparent)
+            0 -10px;
+        background-color: darkgreen;
+        background-size: 15px 20px;
+    }
+    .fish{
+        background: radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,1) 21%, rgba(255,255,255,1) 34%, transparent 35%, transparent), radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,1) 21%, rgba(255,255,255,1) 34%, transparent 35%, transparent) 8px 5px;
+        background-size: 16px 16px;
+        background-color: #FFE800;
+    }
+    .sun{
+        background: radial-gradient(circle at 82% 36%, transparent 58%, lightyellow 60%, yellow 75%);
+    }
+
+    %sheep_texture{
+        background: radial-gradient( circle at 50% 100%, transparent 20%, white 21%, white 34%, transparent 35%, transparent), radial-gradient(circle at 50% 0%, transparent 20%, white 21%, white 34%, transparent 35%, transparent) -3px 0 #ECECEC;
+        background-size: 9px 9px;
+    }
+    %cloud_texture{
+    background-image: linear-gradient(90deg, #253AA4 50%, #2F49CD 50%);
+  background-size: 6px 6px;
+    }
+    %cloud_texture2{
+//background-image: linear-gradient(45deg, #2F49CD 50%, #253AA4 50%);
+background-image: linear-gradient(45deg, #2F49CD 50%, #283EAA 50%);
+  background-size: 5px 5px;
+
+    }
+    %cloud_texture3{
+background-image: linear-gradient(0deg, #2F49CD 50%, #2F52CD 50%);
+  background-size: 5px 5px;
+    }
+
+}
+

@@ -1,0 +1,93 @@
+.landscape a{
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    cursor: default;
+    left: -1000;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+$TOTAL: 20;
+$ONE_WIDTH: (100%/$TOTAL);
+$ALL_AS: "";
+$ONE_A: "a+";
+
+$sea_start: 12%;
+$sea_step: (2 * -12%)/$TOTAL;
+
+$cloud_start: 5.6%;
+$cloud_step: (2 * -5.6%)/$TOTAL;
+
+$daisies_start: 2%;
+$daisies_step: (2 * -2%)/$TOTAL;
+
+$conehead_start: 1%;
+$conehead_step: (2 * -1%)/$TOTAL;
+
+$horizont_start: 0.4%;
+$horizont_step: (2 * -0.4%)/$TOTAL;
+
+$mountains_start: -2%;
+$mountains_step: (2 * 2%)/$TOTAL;
+
+input, label{
+    display: none;
+}
+input:checked, input:not(:checked),
+label:checked, label:not(:checked) { 
+    display: inline-block;
+}
+
+#paralax:not(:checked) ~ .landscape{
+    a{
+        display: none;
+    }
+}
+.landscape{
+//#paralax:checked + label + .landscape{
+//#paralax:checked ~ .landscape{
+    a{
+        width: $ONE_WIDTH;
+    }
+
+    @for $n from 0 through $TOTAL{
+        a.n#{$n}{
+            left: #{$n * $ONE_WIDTH};
+        }
+
+        a.n#{$n}:hover~.sea{
+            margin-left: ($sea_start + ($n * $sea_step));
+        }
+        a.n#{$n}:hover~.cloud{
+            margin-left: ($cloud_start + ($n * $cloud_step));
+        }
+        a.n#{$n}:hover~.daisies{
+            margin-left: ($daisies_start + ($n * $daisies_step));
+        }
+        a.n#{$n}:hover~.sun,
+        a.n#{$n}:hover~.conehead{
+            margin-left: ($conehead_start + ($n * $conehead_step));
+        }
+        a.n#{$n}:hover~.horizont{
+            margin-left: ($horizont_start + ($n * $horizont_step));
+        }
+        a.n#{$n}:hover~.mountains{
+            margin-right: ($mountains_start + ($n * $mountains_step));
+        }
+        //  $ALL_AS: $ALL_AS + $ONE_A;
+    }
+}
+
+
+//.sun,
+//.sea,
+//.cloud,
+//.daisies,
+//.conehead,
+//.horizont{
+//  transition: margin-left linear 1s;
+//}
+//.mountains{
+//  transition: margin-right linear 1s;
+//}

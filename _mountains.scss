@@ -1,0 +1,46 @@
+.mountains{
+    box-shadow: none;
+    bottom: 36%;
+    height: 0;
+    right: -7.5%;
+}
+.mountains b{
+    left: -754px;
+    box-shadow: none;
+    display: block;
+    position:absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 154px 190px 260px;
+    border-color: transparent transparent #007bff transparent;
+}
+.mountains b:nth-child(4){
+    left: -560px;
+    border-width: 0 200px 300px 200px;
+    border-color: transparent transparent #298EFA transparent;
+}
+.mountains b:nth-child(5){
+    left: -431px;
+    border-width: 0px 73px 107px 71px;
+    border-color: transparent transparent white transparent;
+    bottom: 193px;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.2);
+}
+.mountains b:nth-child(2){
+    left: -406px;
+    border-width: 0 187px 234px 164px;
+}
+.mountains b:nth-child(1){
+    left: -237px;
+    border-width: 0 145px 135px 100px;
+    border-color: transparent transparent #006EE5 transparent;
+}
+.shadow.mountains{
+    bottom: 34.5%;
+    right: -9.1%
+}
+.shadow.mountains b{
+    border-color: transparent transparent rgba(0,0,0,0.2) transparent;
+}

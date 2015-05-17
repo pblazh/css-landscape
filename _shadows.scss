@@ -1,0 +1,99 @@
+#shadows:checked~.landscape{
+    .sea{
+        //box-shadow: 1px -4px 1px rgba(0, 0, 0, 0.1), 0px -14px 2px rgba(0, 0, 0, 0.2), inset 0px 30px 48px rgba(255,255,255,0.8), inset 0px -50px 100px rgba(0,0,0,0.7), inset 0px 9px 10px rgba(0,128,0,0.9);
+        box-shadow: 1px -4px 1px rgba(0, 0, 0, 0.1), 0px -14px 2px rgba(0, 0, 0, 0.2);
+        border-top: none;
+    }
+
+    .horizont{
+        box-shadow: 0px -3px 3px rgba(0,0,0,0.2);
+        border-top: none;
+    }
+    .conehead{
+        box-shadow: 0px -6px 3px rgba(0,0,0,0.2);
+        border-top: none;
+    }
+    .daisies{
+        box-shadow: 0px -10px 1px rgba(0,0,0,0.2);
+        border-top: none;
+    }
+
+    .sun{
+        box-shadow: -11px 6px 1px rgba(0,0,0,0.2);
+       // border-left: none;
+    }
+
+    .conehead{
+        box-shadow: 0px -6px 3px rgba(0,0,0,0.2);
+        border-top: none;
+    }
+
+    .wolf{
+      box-shadow: inset 0px 2px 0px #666666, inset -13px -8px 0px #333333, inset -4px -7px 0px red, 10px 12px 1px rgba(0,0,0,0.3);
+    }
+    .wolf:before {
+      box-shadow: inset -1px 1px 1px #888888, inset -1px -4px 1px #111111;
+    }
+    .wolf:after {
+      box-shadow: -10px 10px 0 0px #333333;
+    }
+
+
+    .cloud{
+        box-shadow: -10px 10px 3px rgba(0,0,0,0.2);
+    }
+    .cloud:before{
+        box-shadow: -18px 16px 5px -5px rgba(0,0,0,0.2);
+    }
+    .cloud:after{
+        box-shadow: 4px 10px 1px -4px rgba(0,0,0,0.2);
+    }
+
+
+    .fish{
+        box-shadow: inset 5px 11px 16px 2px rgb(255, 198, 94), 0px 20px 3px rgba(0,0,0,0.4);
+        border-top: none;
+    }
+    .fish:before{
+      top: -17px;
+    }
+    .fish:after{
+       // box-shadow: 0px 20px 20px rgba(0,0,0,0.4);
+    }
+
+    .fish:nth-child(2){
+      box-shadow: inset 5px 11px 16px 2px #FF0000, 0px 20px 3px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .sheep{
+        border-bottom: none;
+        box-shadow: -9px 4px 3px rgba(0,0,0,0.3);
+    }
+    .sheep:before{
+        box-shadow: -9px 4px 3px rgba(0,0,0,0.3);
+    }
+
+    .sheep b{
+        box-shadow: -3px 3px 3px rgba(0,0,0,0.4);
+    }
+    .sheep b:before{
+        box-shadow: -3px 3px 3px rgba(0,0,0,0.4);
+    }
+    .sheep b:after{
+        // ear
+    //    box-shadow: 0px 6px 3px rgba(0,0,0,0.4);
+    }
+    .cloud{
+        box-shadow: -10px 10px 3px rgba(0,0,0,0.2);
+        border-bottom: none;
+    }
+    .cloud:before{
+        box-shadow: -18px 16px 5px -5px rgba(0,0,0,0.2);
+        border-bottom: none;
+    }
+    .cloud:after{
+        box-shadow: 4px 10px 1px -4px rgba(0,0,0,0.2);
+        border-bottom: none;
+    }
+}
