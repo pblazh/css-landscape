@@ -22,18 +22,16 @@ input {
   position: absolute; }
 
 .box {
-  left: 0;
-  right: 0;
   width: 40%;
-  height: 60%;
-  height: 250px;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  color: #0072FF;
+  top: 30%;
+  left: 50%;
+  margin-left: -20%;
+  display: inline-block;
+  color: #004192;
   text-align: center;
-  font-size: 24px;
-  padding: 25px 50px;
+  font-size: 18px;
+  line-height: 1;
+  padding: 25px 50px 0 50px;
   font-family: sans-serif;
   background: white;
   background: rgba(245, 245, 245, 0.5);
@@ -53,6 +51,20 @@ input {
     display: inline !important; }
   .box strong {
     text-transform: uppercase; }
+  .box .pre {
+    font-family: monospace;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    left: 4%;
+    right: 4%;
+    font-size: 1.05em;
+    text-align: left;
+    position: relative; }
+    .box .pre .tag {
+      color: #007BFF; }
+    .box .pre .attr {
+      color: #F08E8E; }
 
 #textures:checked ~ #images:not(:checked) ~ .landscape .conehead {
   background: linear-gradient(108deg, transparent 85%, rgba(83, 190, 138, 0.8) 85%) 0px -25px, linear-gradient(250deg, transparent 85%, rgba(38, 170, 69, 0.8) 85%) 0px -25px, linear-gradient(115deg, transparent 80%, rgba(83, 190, 138, 0.8) 80%) 0px -12px, linear-gradient(245deg, transparent 80%, rgba(38, 170, 69, 0.8) 80%) 0px -12px, linear-gradient(120deg, transparent 75%, #4db074 75%) 0 0, linear-gradient(240deg, transparent 75%, #27911f 75%) 0 0, #178117;
